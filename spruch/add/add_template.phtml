@@ -1,0 +1,29 @@
+<form class="form-horizontal" action="/spruch/add/" method="post">
+	<fieldset>
+		<legend>Neuen Spruch hinzufügen</legend>
+		<div class="control-group">
+			<label class="control-label" for="quote">Spruch</label>
+
+			<div class="controls">
+				<textarea class="input-xlarge" name="quote" id="quote" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="explanation">Erklärung</label>
+
+			<div class="controls">
+				<textarea class="input-xlarge" name="explanation" id="explanation" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="location">Ort (z.B. BPT, Crewtreffen)</label>
+
+			<div class="controls">
+				<input type="text" class="input-xlarge" id="location" name="location">
+			</div>
+		</div>
+		<div class="form-actions">
+			<button type="submit" class="btn btn-primary">Spruch eintragen</button>
+		</div>
+	</fieldset>
+	</form>

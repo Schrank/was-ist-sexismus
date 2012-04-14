@@ -1,0 +1,25 @@
+<div class="hero-unit">
+	<h1>Das ist Sexismus:</h1>
+
+	<h2>Dieser Spruch ist daneben</h2>
+
+	<p><?= $quote ?></p>
+
+	<?php if (isset($explanation) && !empty($explanation)): ?>
+	<h3>Warum? Deswegen:</h3>
+	<p><?= $explanation ?></p>
+	<?php endif; ?>
+
+	<h3>Und es ist bei uns passiert!</h3>
+
+	<p><?= isset($location) && !empty($location) ? $location : 'Ort unbekannt'; ?></p>
+	<?php
+	$uri = $_SERVER['HTTP_HOST'];
+	$protocol = $_SERVER['SERVER_PORT'] == 80 ? 'http://' : 'https://';
+	?>
+	<p>
+		<a class="btn btn-primary btn-large" href="<?= $protocol . $uri . '/' . $id ?>">Permanenter Link &raquo;</a>
+		<a class="btn btn-primary btn-success btn-large" href="<?= $protocol . $uri . '?' . mt_rand() ?>">Nächster
+			Spruch &raquo;</a>
+	</p>
+</div>
